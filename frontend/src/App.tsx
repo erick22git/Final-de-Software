@@ -90,7 +90,7 @@ function App() {
     setLoading(false);
 
     // Conectar WebSocket
-    const socket = io('http://localhost:3001');
+    const socket = io(import.meta.env.VITE_BACKEND_URL || 'http://localhost:3001');
 
     socket.on('connect', () => {
       setIsConnected(true);
