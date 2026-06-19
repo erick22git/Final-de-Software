@@ -1,0 +1,10 @@
+{
+  "name": "erara-petrol-system",
+  "version": "1.0.0",
+  "scripts": {
+    "dev:backend": "cd backend && npm start",
+    "dev:frontend": "cd frontend && npm run dev",
+    "start": "npm run dev:backend",
+    "dev": "npm run dev:frontend"
+  }
+}
